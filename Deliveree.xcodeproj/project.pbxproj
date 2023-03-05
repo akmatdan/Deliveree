@@ -35,8 +35,11 @@
 		E3263ECA29B2896000B71E6B /* ReuseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3263EC929B2896000B71E6B /* ReuseButton.swift */; };
 		E373CFBD29B45A25004BAF7C /* Search_Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373CFBC29B45A25004BAF7C /* Search_Filter.swift */; };
 		E373CFC629B45BEE004BAF7C /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373CFC529B45BEE004BAF7C /* DishView.swift */; };
-		E373CFD529B47DC1004BAF7C /* Tony_Romas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373CFD429B47DC1004BAF7C /* Tony_Romas.swift */; };
 		E3F9F1A329B4F0B2006F78B2 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F9F1A229B4F0B2006F78B2 /* ListView.swift */; };
+		E3F9F1A629B4F666006F78B2 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F9F1A529B4F666006F78B2 /* NavigationBarView.swift */; };
+		E3F9F1A929B4F7A5006F78B2 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F9F1A829B4F7A5006F78B2 /* WalletView.swift */; };
+		E3F9F1AC29B4F7BA006F78B2 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F9F1AB29B4F7BA006F78B2 /* ChatView.swift */; };
+		E3F9F1AF29B4F7D1006F78B2 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F9F1AE29B4F7D1006F78B2 /* ContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,8 +73,11 @@
 		E3263EC929B2896000B71E6B /* ReuseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseButton.swift; sourceTree = "<group>"; };
 		E373CFBC29B45A25004BAF7C /* Search_Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search_Filter.swift; sourceTree = "<group>"; };
 		E373CFC529B45BEE004BAF7C /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
-		E373CFD429B47DC1004BAF7C /* Tony_Romas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tony_Romas.swift; sourceTree = "<group>"; };
 		E3F9F1A229B4F0B2006F78B2 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		E3F9F1A529B4F666006F78B2 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		E3F9F1A829B4F7A5006F78B2 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		E3F9F1AB29B4F7BA006F78B2 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		E3F9F1AE29B4F7D1006F78B2 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 				E373CFBB29B459F5004BAF7C /* Search */,
 				E373CFC729B46059004BAF7C /* ViewPager */,
 				E3F9F1A129B4F08A006F78B2 /* List */,
+				E3F9F1A429B4F645006F78B2 /* NavigationBar */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,10 +196,12 @@
 		E319851A29B239ED00684913 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E373CFD029B47D78004BAF7C /* Restorants */,
 				E373CFC929B4607F004BAF7C /* Landing */,
 				E373CFCA29B46089004BAF7C /* Main */,
 				E373CFCB29B46090004BAF7C /* DeliveryLocation */,
+				E3F9F1A729B4F774006F78B2 /* Wallet */,
+				E3F9F1AA29B4F7AA006F78B2 /* Chat */,
+				E3F9F1AD29B4F7C1006F78B2 /* Contact */,
 				E31984E729B1E28500684913 /* ContentView.swift */,
 			);
 			path = Core;
@@ -299,28 +308,44 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		E373CFD029B47D78004BAF7C /* Restorants */ = {
-			isa = PBXGroup;
-			children = (
-				E373CFD129B47D87004BAF7C /* Views */,
-			);
-			path = Restorants;
-			sourceTree = "<group>";
-		};
-		E373CFD129B47D87004BAF7C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E373CFD429B47DC1004BAF7C /* Tony_Romas.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		E3F9F1A129B4F08A006F78B2 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				E3F9F1A229B4F0B2006F78B2 /* ListView.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		E3F9F1A429B4F645006F78B2 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				E3F9F1A529B4F666006F78B2 /* NavigationBarView.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		E3F9F1A729B4F774006F78B2 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				E3F9F1A829B4F7A5006F78B2 /* WalletView.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		E3F9F1AA29B4F7AA006F78B2 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E3F9F1AB29B4F7BA006F78B2 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		E3F9F1AD29B4F7C1006F78B2 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				E3F9F1AE29B4F7D1006F78B2 /* ContactView.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,9 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E373CFBD29B45A25004BAF7C /* Search_Filter.swift in Sources */,
+				E3F9F1AF29B4F7D1006F78B2 /* ContactView.swift in Sources */,
 				E3F9F1A329B4F0B2006F78B2 /* ListView.swift in Sources */,
 				E319852929B252E900684913 /* DeliveryView.swift in Sources */,
 				E319852029B243CB00684913 /* NavView.swift in Sources */,
+				E3F9F1AC29B4F7BA006F78B2 /* ChatView.swift in Sources */,
 				E31984F829B1E5CD00684913 /* LandingView.swift in Sources */,
 				E319852B29B2530C00684913 /* TakeawayView.swift in Sources */,
 				E319852F29B25E7700684913 /* CurbsideView.swift in Sources */,
@@ -413,10 +440,11 @@
 				E319852D29B25E6500684913 /* CateringView.swift in Sources */,
 				E319852629B250DC00684913 /* TopButtons.swift in Sources */,
 				E319853129B25E8600684913 /* OffersView.swift in Sources */,
+				E3F9F1A929B4F7A5006F78B2 /* WalletView.swift in Sources */,
 				E319852329B2462F00684913 /* ColorsManager.swift in Sources */,
 				E319850729B2369100684913 /* FontsManager.swift in Sources */,
-				E373CFD529B47DC1004BAF7C /* Tony_Romas.swift in Sources */,
 				E3263ECA29B2896000B71E6B /* ReuseButton.swift in Sources */,
+				E3F9F1A629B4F666006F78B2 /* NavigationBarView.swift in Sources */,
 				E373CFC629B45BEE004BAF7C /* DishView.swift in Sources */,
 				E31984E629B1E28500684913 /* DelivereeApp.swift in Sources */,
 				E319851C29B23A1000684913 /* MainView.swift in Sources */,

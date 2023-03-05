@@ -20,6 +20,9 @@ struct MainView: View {
             Spacer()
             DishView()
             
+            ListView()
+            
+            
             Spacer()
         }
         .padding(.vertical, 5)

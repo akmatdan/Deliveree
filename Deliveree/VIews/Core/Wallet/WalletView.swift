@@ -1,5 +1,5 @@
 //
-//  Tony_Romas.swift
+//  WalletView.swift
 //  Deliveree
 //
 //  Created by Daniil Akmatov on 5/3/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct Tony_Romas: View {
+struct WalletView: View {
     var body: some View {
-        Text("Tony Roma's")
+        Text("Wallet")
     }
 }
 
-struct Tony_Romas_Previews: PreviewProvider {
+struct WalletView_Previews: PreviewProvider {
     static var previews: some View {
-        Tony_Romas()
+        WalletView()
     }
 }
