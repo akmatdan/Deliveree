@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E303BACD29B50F6C00786DC5 /* Tony_Romas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303BACC29B50F6C00786DC5 /* Tony_Romas.swift */; };
+		E303BAD229B5952C00786DC5 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303BAD129B5952C00786DC5 /* LocationViewModel.swift */; };
 		E31984E629B1E28500684913 /* DelivereeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31984E529B1E28500684913 /* DelivereeApp.swift */; };
 		E31984E829B1E28500684913 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31984E729B1E28500684913 /* ContentView.swift */; };
 		E31984EA29B1E28B00684913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31984E929B1E28B00684913 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E303BACC29B50F6C00786DC5 /* Tony_Romas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tony_Romas.swift; sourceTree = "<group>"; };
+		E303BAD129B5952C00786DC5 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		E31984E229B1E28500684913 /* Deliveree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deliveree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31984E529B1E28500684913 /* DelivereeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelivereeApp.swift; sourceTree = "<group>"; };
 		E31984E729B1E28500684913 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +95,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E303BACB29B50F5500786DC5 /* Restaurants */ = {
+			isa = PBXGroup;
+			children = (
+				E303BACC29B50F6C00786DC5 /* Tony_Romas.swift */,
+			);
+			path = Restaurants;
+			sourceTree = "<group>";
+		};
+		E303BAD029B5951200786DC5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E303BAD129B5952C00786DC5 /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E31984D929B1E28500684913 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +216,7 @@
 		E319851A29B239ED00684913 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E303BACB29B50F5500786DC5 /* Restaurants */,
 				E373CFC929B4607F004BAF7C /* Landing */,
 				E373CFCA29B46089004BAF7C /* Main */,
 				E373CFCB29B46090004BAF7C /* DeliveryLocation */,
@@ -288,6 +309,7 @@
 		E373CFCB29B46090004BAF7C /* DeliveryLocation */ = {
 			isa = PBXGroup;
 			children = (
+				E303BAD029B5951200786DC5 /* ViewModel */,
 				E319851D29B23A7E00684913 /* DeliveryLocationView.swift */,
 			);
 			path = DeliveryLocation;
@@ -437,6 +459,7 @@
 				E319852B29B2530C00684913 /* TakeawayView.swift in Sources */,
 				E319852F29B25E7700684913 /* CurbsideView.swift in Sources */,
 				E31984E829B1E28500684913 /* ContentView.swift in Sources */,
+				E303BAD229B5952C00786DC5 /* LocationViewModel.swift in Sources */,
 				E319852D29B25E6500684913 /* CateringView.swift in Sources */,
 				E319852629B250DC00684913 /* TopButtons.swift in Sources */,
 				E319853129B25E8600684913 /* OffersView.swift in Sources */,
@@ -448,6 +471,7 @@
 				E373CFC629B45BEE004BAF7C /* DishView.swift in Sources */,
 				E31984E629B1E28500684913 /* DelivereeApp.swift in Sources */,
 				E319851C29B23A1000684913 /* MainView.swift in Sources */,
+				E303BACD29B50F6C00786DC5 /* Tony_Romas.swift in Sources */,
 				E319851E29B23A7E00684913 /* DeliveryLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

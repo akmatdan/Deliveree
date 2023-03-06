@@ -30,32 +30,42 @@ struct NavigationBarView: View {
                 
                 ContactView()
                     .tag(Tab.Contact)
-                
             }
 
-            HStack {
-                ForEach(Tab.allCases, id: \.self) { tab in
-                    Button {
-                        currentTab = tab
-                    } label: {
-                        Image(systemName: tab.rawValue)
-                            .resizable()
-                            .renderingMode(.template)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 20, height: 20)
-        
-                            .foregroundColor(currentTab == tab ? Color(red: 0.2, green: 0.0, blue: 0.7) : Color.white.opacity(0.3))
+            ZStack {
+                RoundedRectangle(cornerRadius: 30)
+                    .foregroundColor(.black)
+                    .frame(height: 75)
+                    .padding(.horizontal, 20)
+                
+                HStack(spacing: 30) {
+                    ForEach(Tab.allCases, id: \.self) { tab in
+                        Button(action: {
+                            currentTab = tab
+                        }) {
+                            ZStack {
+                                Circle()
+                                    .foregroundColor(currentTab == tab ? Color.theme.circle : Color.clear)
+                                    .frame(width: 50, height: 50)
+                                
+                                Image(String(tab.rawValue))
+                                    .resizable()
+                                   .renderingMode(.template)
+                                   .aspectRatio(contentMode: .fit)
+                                   .frame(width: 20, height: 20)
+                                    .font(.system(size: 20, weight: .medium))
+                                    .foregroundColor(currentTab == tab ? .white : .white)
+                            }
+                        }
                     }
                 }
+                .frame(height: 75)
             }
-            .padding([.horizontal, .top])
-            .background(.black)
-            .padding(10)
         }
+        .background(Color.theme.background)
     }
 }
 
-// Tab cases, Iterable
 enum Tab: String, CaseIterable {
     
     // Raw Value Image name in asset

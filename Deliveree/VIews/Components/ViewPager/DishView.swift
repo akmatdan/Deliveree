@@ -17,12 +17,12 @@ struct DishView: View {
     var body: some View {
         
         ScrollView(.horizontal) {
-            HStack(spacing: 30) {
+            HStack(spacing: -5) {
                 ForEach(dishesList) { dish in
                     Button {
                         
                     } label: {
-                        VStack(spacing: 0) {
+                        VStack {
                             Spacer()
                             Text(dish.name)
                                 .font(.custom(FontsManager.Poppins.bold, size: 16))
@@ -100,16 +100,16 @@ struct DishView: View {
                                 .scaledToFit()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 180, height: 180, alignment: .center)
-                                .offset(y: -60)
+                                .offset(y: -70)
                         )
-                        
                     }
-                    .frame(width: 160, height: 310)
+                    .padding(.top, 60)
                 }
+                .padding()
             }
         }
         .background(Color.theme.background)
-        .frame(width: 351, height: 310)
+        
     }
 }
 

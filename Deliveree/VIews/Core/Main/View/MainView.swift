@@ -17,11 +17,9 @@ struct MainView: View {
             
             Search_Filter()
             
-            Spacer()
             DishView()
             
             ListView()
-            
             
             Spacer()
         }

@@ -10,15 +10,14 @@ import SwiftUI
 struct Search_Filter: View {
     var body: some View {
         VStack {
+            Text("56 stores open")
+                .font(.custom(FontsManager.Poppins.medium, size: 16))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal,15)
             HStack {
-                Text("56 stores open")
-                    .font(.custom(FontsManager.Poppins.medium, size: 16))
-                    .padding(.horizontal, 15)
                 Spacer()
-            }
-            
-            
-            HStack {
+                Spacer()
                 Button {
                     
                 } label: {
@@ -40,7 +39,6 @@ struct Search_Filter: View {
                     .background(.white)
                     .cornerRadius(15)
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
-                    
                 }
                     
                 Spacer()
@@ -58,6 +56,7 @@ struct Search_Filter: View {
             .padding(.horizontal, 15)
 
         }
+        .padding(.horizontal, 5)
     }
 }
 
